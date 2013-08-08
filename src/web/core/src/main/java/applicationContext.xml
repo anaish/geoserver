@@ -278,6 +278,16 @@
 
   <!-- Data store panels. Used to set up custom icons for the different vector 
     or raster store types -->
+	
+	<bean id="sdhV1DataStorePanel" class="org.geoserver.web.data.resource.DataStorePanelInfo">
+		<property name="id" value="sdh" />
+		<property name="factoryClass"
+		  value="com.geotabular.sdh.data.SdhV1DataStoreFactory" />
+		<property name="iconBase" value="org.geoserver.web.GeoServerApplication" />
+		<property name="icon" value="img/icons/geosilk/page_white_vector.png" />
+	</bean>
+	
+	
   <bean id="defaultDataStorePanel" class="org.geoserver.web.data.resource.DataStorePanelInfo">
     <!-- panel info used for a default vector store icon. This is mandatory 
       as per StoreExtensionPoints requirements -->
