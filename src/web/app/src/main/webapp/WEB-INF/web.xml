@@ -202,6 +202,11 @@
       <listener-class>org.geoserver.GeoserverInitStartupListener</listener-class>
     </listener>
     
+    <!-- guice initializer -->
+    <listener>
+      <listener-class>com.geotabular.sdh.SdhV1GuiceInitialiser</listener-class>
+    </listener>
+    
     <!-- logging initializer, should execute before spring context startup -->
     <listener>
       <listener-class>org.geoserver.logging.LoggingStartupContextListener</listener-class>
