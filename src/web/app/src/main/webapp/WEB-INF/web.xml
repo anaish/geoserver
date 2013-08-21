@@ -204,7 +204,7 @@
     
     <!-- guice initializer -->
     <listener>
-      <listener-class>com.geotabular.sdh.SdhV1GuiceInitialiser</listener-class>
+      <listener-class>com.geotabular.sdh.SdhV1Guice</listener-class>
     </listener>
     
     <!-- logging initializer, should execute before spring context startup -->
